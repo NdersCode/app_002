@@ -20,8 +20,19 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
   @override
   Widget build(context) {
-    return const Column(
-      children: [Text('question()')],
+    return const Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'question',
+            style: TextStyle(
+              fontSize: 28,
+              color: Colors.white,
+            ),
+          )
+        ],
+      ),
     );
   }
 }
