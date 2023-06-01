@@ -20,17 +20,25 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
 
   @override
   Widget build(context) {
-    return const Center(
+    return SizedBox(
+      width: double.infinity,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            'question',
-            style: TextStyle(
-              fontSize: 28,
-              color: Colors.white,
-            ),
-          )
+          const Text('question.....'),
+          const SizedBox(height: 28),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text("answer 1"),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text("answer 2"),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Text("answer 3"),
+          ),
         ],
       ),
     );
