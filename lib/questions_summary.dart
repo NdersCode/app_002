@@ -17,16 +17,33 @@ class QuestionsSummary extends StatelessWidget {
               return Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CircleAvatar(
-                    radius: 15,
-                    backgroundColor: Colors.blueAccent,
+                  Container(
+                    width: 30,
+                    height: 30,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 91, 197, 247),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
                     child: Text(
                       ((data['question_index'] as int) + 1).toString(),
                       style: GoogleFonts.inter(
-                          fontSize: 16,
-                          color: const Color.fromARGB(255, 255, 255, 255),
+                          fontSize: 14,
+                          color: const Color.fromARGB(255, 76, 0, 139),
                           fontWeight: FontWeight.w600),
                     ),
+
+                    // child: CircleAvatar(
+                    //   radius: 16,
+                    //   backgroundColor: const Color.fromARGB(255, 108, 162, 255),
+                    //   child: Text(
+                    //     ((data['question_index'] as int) + 1).toString(),
+                    //     style: GoogleFonts.inter(
+                    //         fontSize: 14,
+                    //         color: const Color.fromARGB(255, 76, 0, 139),
+                    //         fontWeight: FontWeight.w600),
+                    //   ),
+                    // ),
                   ),
                   const SizedBox(
                     width: 20,
